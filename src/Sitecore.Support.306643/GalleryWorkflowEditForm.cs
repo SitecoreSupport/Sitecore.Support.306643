@@ -14,7 +14,7 @@ using Sitecore.Workflows;
 using System;
 using System.Web.UI;
 
-namespace Sitecore.Shell.Applications.ContentManager.Galleries.WorkflowEdit
+namespace Sitecore.Support.Shell.Applications.ContentManager.Galleries.WorkflowEdit
 {
   /// <summary>Represents a menu as a gallery.</summary>
   public class GalleryWorkflowEditForm : GalleryForm
@@ -240,7 +240,7 @@ namespace Sitecore.Shell.Applications.ContentManager.Galleries.WorkflowEdit
         menuItem.Header = workflowCommand.DisplayName;
         menuItem.Icon = workflowCommand.Icon;
         menuItem.Click = new WorkflowCommandBuilder(item, workflow, workflowCommand).ToString();
-        menuItem.Disabled = (!Context.User.IsAdministrator && !item.Locking.HasLock());
+        menuItem.Disabled = (!Context.User.IsAdministrator && !item.Locking.HasLock() && Settings.RequireLockBeforeEditing);
       }
     }
 

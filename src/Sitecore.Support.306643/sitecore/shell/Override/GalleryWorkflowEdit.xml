@@ -7,7 +7,7 @@
       }
     </Stylesheet>
     <Gallery>
-      <CodeBeside Type="Sitecore.Shell.Applications.ContentManager.Galleries.WorkflowEdit.GalleryWorkflowEditForm,Sitecore.Client"/>
+      <CodeBeside Type="Sitecore.Support.Shell.Applications.ContentManager.Galleries.WorkflowEdit.GalleryWorkflowEditForm,Sitecore.Support.306643"/>
 
       <Menu ID="Options" Style="width:100%;" Border="none"/>
 
